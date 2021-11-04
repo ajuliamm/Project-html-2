@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesd2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <title>Desafio 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="title"> Cadastro</p>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <label class="itens"> Nome
+
+                <input class="itens" type="text" autofocus required autocomplete="name" name="Nome">
+            </label>
+
+
+            <label class="itens"> Email
+
+                <input class="itens" type="email" autocomplete="email" name="Email" required>
+            </label>
+
+
+            <label class="itens">Idade
+
+                <input class="itens" type="number" name="Idade" min="12" step="1" required>
+
+            </label>
+
+
+            <label class="itens">Data de Nascimento
+
+                <input class="itens" type="date" name="Data de nascimento" required>
+
+            </label>
+
+
+
+            <label class="itens">Onde você possui conta:
+                <div class="itens">
+                    <label>
+                        <input type="checkbox" name="Conta" value="Instagram"> Instagram </label>
+                    <label>
+                        <input type="checkbox" name="Conta" value="Facebook"> Facebook </label>
+                    <label>
+                        <input type="checkbox" name="Conta" value="Youtube"> Youtube </label>
+
+                </div>
+            </label>
+
+
+
+            <label class="itens"> Sexo
+                <div class="itens">
+                    <label>
+                        <input class="iten-inline" type="radio" name="sexo" value=" Feminino"> Feminino </label>
+                    <label>
+                        <input class="iten-inline" type="radio" name="sexo" value="Masculino"> Masculino</label>
+                </div>
+
+            </label>
+
+
+            <label class="itens">Cor dos olhos
+                <input type="color" value="#1C1C1C" name="cor-dos-olhos">
+
+            </label>
+
+            <label class="itens">Biografia
+
+                <textarea class="itens" cols=40 rows="6" name="biografia" maxlength="400" wrap="soft"></textarea>
+
+            </label>
+
+
+            <label class="itens">Foto do perfil
+
+                <input class="itens" type="file" accept="images/*" name="foto" min="12">
+
+            </label>
+
+
+            <label class="itens">Telefome
+
+                <input class="itens" type="text" name="telefone" autocomplete="tel">
+
+            </label>
+
+
+
+            <label class="itens">Link do Perfil do Facebook
+
+                <input class="itens" type="url" name="url-facebook">
+
+            </label>
+
+
+            <label class="itens">Senha
+
+                <input class="itens" type="password" name="senha" minlength="6" maxlength="8" required>
+
+
+            </label>
+
+            <div class="itens">
+                
+                <button id="button-reset" class="button" type="reset" value="botao-limpar" name="botao-limpar">
+                Limpar</button>
+
+                <button id="button-submit" class="button" type="submit" value="botao-enviar" name="botao-enviar"> Enviar Dados</button>
+            </div>
+
+
+
+
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>
